@@ -1,0 +1,40 @@
+
+{{#if this.isGet}}
+	<h1> GET Request Received </h1>
+	<h2> Data sent: </h2>
+	
+	{{#each dataList}}
+	<table>
+	<tr>
+		<td><b>Name:</b></td>	
+		<td>{{this.name}}</td>
+	</tr>
+	<tr>
+		<td><b>Value:</b></td>
+		<td>{{this.value}}</td>
+	</tr>
+	</table>
+	<p></p>
+	{{/each}}
+{{/if}}
+
+{{#if this.isPost}}
+	<h1> POST Request Received </h1>
+	<h2> Data sent: </h2>
+	
+	{{#each dataList}}
+	<table>
+	<tr>
+		<td><b>Name:</b></td>	
+		<td>{{this.name}}</td>
+	</tr>
+	<tr>
+		<td><b>Value:</b></td>
+		<td>{{this.value}}</td>
+	</tr>
+	</table>
+	<p></p>
+	{{/each}}
+{{/if}}
+
+
